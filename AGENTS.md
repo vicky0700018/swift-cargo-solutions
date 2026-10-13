@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep imported website content, browser storage, and reusable JSX under `src/site/`, with thin TanStack route files at the app boundary so the original plain-JavaScript implementation stays portable.
