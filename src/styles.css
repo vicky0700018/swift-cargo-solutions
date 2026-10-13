@@ -360,7 +360,9 @@
   .stat-card strong { display: block; font-family: var(--font-display); font-size: 2rem; font-weight: 800; margin-top: .4rem; }
   .stat-card small { color: var(--muted-foreground); }
   .admin-overview-grid { display: grid; gap: 1.25rem; margin-top: 1.25rem; }
-  @media (min-width: 1024px) { .admin-overview-grid { grid-template-columns: 1.6fr 1fr; } }
+  @media (min-width: 1024px) { .admin-overview-grid { grid-template-columns: minmax(0, 1.8fr) minmax(16rem, 1fr); } }
+  .admin-overview-grid > * { min-width: 0; }
+  .admin-table td small { display: block; margin-top: 0.15rem; color: var(--muted-foreground); }
   .admin-panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 1.25rem; }
   @media (min-width: 768px) { .admin-panel { padding: 1.6rem; } }
   .admin-panel--danger { border-color: oklch(0.577 0.22 27 / 35%); }
