@@ -423,3 +423,4 @@
   .demo-creds code { font-weight: 600; color: var(--foreground); word-break: break-all; }
   .demo-creds .text-link { justify-self: start; font-size: .85rem; }
 }
+.gallery-preview__heading { margin-bottom: 2rem; }
